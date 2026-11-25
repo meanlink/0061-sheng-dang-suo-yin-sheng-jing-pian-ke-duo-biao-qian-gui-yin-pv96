@@ -1,0 +1,5 @@
+:root{--s-page:oklch(23% .03 160);--s-panel:oklch(28% .033 161);--s-ink:oklch(91% .036 99);--s-muted:oklch(78% .057 113);--s-accent:oklch(79% .114 110);--s-onaccent:oklch(25% .055 149);--s-line:oklch(46% .048 161)}
+.trace{display:grid;gap:.5rem}
+.slice{padding:.6rem;display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--s-panel);border-inline-start:3px solid var(--s-accent)}
+.labeler{display:grid;gap:.65rem}
+.spectrum{border:1px solid var(--s-line);padding:.8rem}

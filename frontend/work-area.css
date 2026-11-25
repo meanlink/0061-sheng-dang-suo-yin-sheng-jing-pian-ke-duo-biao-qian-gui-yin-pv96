@@ -1,0 +1,18 @@
+.intro { margin: 1rem 0 2rem; max-width: 55rem; }
+.intro p { color: var(--s-muted); max-width: 45rem; }
+.stack { display: grid; gap: 1.2rem; min-width: 0; }
+.split { display: grid; grid-template-columns: minmax(0,2.1fr) minmax(0,1fr); gap: clamp(1rem,3vw,3rem); }
+.band { border-top: 3px solid var(--s-accent); padding-top: 1rem; }
+.data-frame { overflow: auto; }
+.data-frame caption { text-align: left; font-weight: 700; padding: 0 0 .4rem; }
+.entry { border: 1px solid var(--s-line); padding: 1.1rem; background: var(--s-panel); display: grid; align-content: start; gap: .8rem; }
+.entry textarea { width: 100%; min-height: 5.5rem; }
+.entry button { justify-self: start; }
+.entry [role=status] { margin: 0; }
+.statline { display: flex; gap: clamp(1rem,3vw,3rem); flex-wrap: wrap; margin-block: 1rem; }
+.statline > div { border-inline-start: 2px solid var(--s-line); padding-inline-start: .8rem; }
+.statline dt { color: var(--s-muted); }
+.statline dd { margin: .25rem 0 0; font-size: clamp(1.25rem, 3vw, 2.3rem); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.toolrow { display: flex; flex-wrap: wrap; align-items: end; gap: .65rem; margin: 1.2rem 0; }
+.callout { padding: .8rem 1rem; border-inline-start: 3px solid var(--s-accent); background: var(--s-panel); }
+@media (max-width:767px) { .split { grid-template-columns:minmax(0,1fr); } .intro { margin-bottom:1.2rem; } }
