@@ -16,3 +16,17 @@
 .toolrow { display: flex; flex-wrap: wrap; align-items: end; gap: .65rem; margin: 1.2rem 0; }
 .callout { padding: .8rem 1rem; border-inline-start: 3px solid var(--s-accent); background: var(--s-panel); }
 @media (max-width:767px) { .split { grid-template-columns:minmax(0,1fr); } .intro { margin-bottom:1.2rem; } }
+
+/* 同一卷多段补正 */
+.side-forms { display: grid; align-content: start; gap: 1.2rem; min-width: 0; }
+.correction-entry { gap: 1rem; }
+.correction-entry .hint, .entry .hint { color: var(--s-muted); font-size: .9rem; margin: 0; }
+.correction-grid { display: grid; gap: .8rem; }
+.correction-row { border: 1px solid var(--s-line); padding: .7rem .8rem; margin: 0; min-width: 0; }
+.correction-row legend { font-weight: 700; padding: 0 .35rem; }
+.correction-times, .correction-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)); gap: .5rem; }
+.correction-row label { display: grid; gap: .2rem; font-size: .82rem; color: var(--s-muted); }
+.correction-row input { width: 100%; min-width: 0; }
+.correction-done { margin: 0; font-size: .92rem; }
+.version-slot { display: inline-flex; align-items: end; }
+.version-slot label { display: grid; gap: .2rem; }
